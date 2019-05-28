@@ -6,11 +6,11 @@ using System.Text;
 
 namespace MyShop.Core.Models
 {
-    public class Product
+    public class Product :BaseEntity
     {
 
        
-        public string Id { get; set; }
+        //public string Id { get; set; }
         [StringLength(20)]
         [DisplayName("Product Name")]
         public string Name { get; set; }
@@ -19,10 +19,10 @@ namespace MyShop.Core.Models
         public string Category { get; set; }
         public string Image { get; set; }
 
-        public Product()
-        {
-            this.Id = Guid.NewGuid().ToString();
+        //public Product()
+        //{
+         //   this.Id = Guid.NewGuid().ToString();
 
-        }
+        //}
     }
 }
